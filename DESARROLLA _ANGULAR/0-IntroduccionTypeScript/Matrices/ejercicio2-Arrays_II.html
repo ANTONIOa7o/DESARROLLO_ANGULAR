@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array II</title>
+</head>
+
+<body>
+    <script>
+
+        var valores = [true, 5, false, 'hola', 2, 'adios'];
+
+        var arrayTexto = new Array();
+        var arrayNumero = new Array();
+        var arrayBuleana = new Array();
+        //Arrastra elementos dentro de un array a otro
+        /*
+        .push accede al elemento y lo arrastra al final de la estructura
+        */
+
+        for (let item of valores) {
+            if (typeof (item) == 'string') {
+                arrayTexto.push(item);
+            } else if (typeof (item) == 'number') {
+                arrayNumero.push(item);
+            } else if (typeof (item) == 'boolean')
+                arrayBuleana.push(item);
+
+
+        }
+        console.log(arrayTexto);
+        console.log(arrayNumero);
+        console.log(arrayBuleana);
+
+        /*
+        Desarrollando comportamiento del Array
+        */
+
+    //1º Identicacion de elementos mayores vs menores
+    if (arrayTexto[0].length > arrayTexto[1].length) {
+
+        document.write('El texto mayor será: ' + arrayTexto[0] + '<br>')
+        
+    } else {
+        document.write('el texto mayor será: ' +  arrayTexto[1]+'<br>')
+        
+    }
+    //2º iteraciones de booleano + condiciones
+ console.log(item)
+    var resultadoTrue = true;
+    var resultadoFalse=false;
+   
+    for (var item of arrayBuleana) {
+        resultadoTrue = resultadoTrue || item;//item=true
+        console.log(item);
+        resultadoFalse= resultadoFalse || item//item=true
+        console.log(item);
+
+//ojo, dentro o fuera del ambito del recorrido observamos la itinerancia de la varaible item
+    }
+    
+    
+
+    document.write('Resultado verdadero: ' + resultadoTrue+'<br>');
+    document.write('Resultado falso: ' + resultadoFalse + '<br>'); 
+console.log(item);
+//3º Operaciones algebraicas
+
+var suma=0;
+var multiplicacion = 1;
+for (var num of arrayNumero) {
+    suma += num
+    multiplicacion *= num   
+}
+    console.log(num);
+    console.log(suma);
+    console.log(multiplicacion);
+
+//4º identificacion de posiciones
+
+var frutas = ['Manzanas','Peras','Naranjas','Platano'];
+//Anadir al array, ultima posicion- modificamos el array a dinamico - CREAD- READ
+var nuevaLongitud = frutas.push('MELOCOTONES');
+console.log(frutas);
+//Poscion del elemento
+var posicion = frutas.indexOf('Naranjas');
+console.log(posicion);
+//Borrar ultimo elemento - DELETE
+var eliminar = frutas.pop()
+console.log(frutas);
+//Inicar el array- UPDATE
+var inicio = frutas.unshift('FRESAS');
+console.log(frutas);
+
+    </script>
+</body>
+
+</html>

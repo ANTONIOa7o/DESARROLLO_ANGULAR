@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUCCION</title>
+</head>
+<body>
+    <!--
+
+                    ====================
+                    HERENCIAS DE JS-ECM6
+                    ====================
+            las caracteristicas que hereda typeScript
+        
+        1.template, configuracion de string, primitivos...
+        2.Funciones...arrow
+        3.Ambitos
+        4.Desestructuracion-Clases
+        5.Declaraciones de las variables
+
+    ----------------------------
+
+    template String
+typeScript como javaScript, las caracteristicas de los templates son:
+        - comillas simple o dobles, serán absorbidas por el caracter --- `.
+        - nos permitia la concatenacion + , es sustituida por  dichos caracteres `...`
+        - Las variables ahora son incluidas no concatenadas con la grafia $, obliga a 
+        una sintaxis para diferencias su asociacion {}. En resumen dicha vista:
+         ${nombre_variable}
+
+    -->
+    <script>
+
+var nombre = 'Antonio';
+var apellido = 'Cuadrado';
+edad = 22;
+document.write('Hola me llamo: '+ nombre+'!' + ' y apellido es ' + apellido + ' y mi edad es: ' + edad + '<br>');
+
+document.write(`Hola me llamo: ${nombre}! y mi apellido es  ${apellido}  y mi edad es: ${edad} <br>`);
+
+    </script>
+</body>
+</html>

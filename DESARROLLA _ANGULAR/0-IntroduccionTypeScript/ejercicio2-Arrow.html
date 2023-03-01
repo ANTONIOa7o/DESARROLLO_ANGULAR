@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolucion de la funcion Arrow</title>
+</head>
+<body>
+    <!--
+
+    Su punto de partida, que muchos lenguajes han partipacido desde concepto de inicio.
+    foreach, será su base de desarrollo inicial. 
+    Su finalidad parte ejecuta una funcion por cada elemento,parámetro asignado 
+    inicialmente dicha iteracion partia de 3 elementos
+    1 valor
+    2.indice
+    3.Array
+
+    [inicio]
+    forEach(function(elemento,indice, array)){
+        metodos declarados de ejecucion
+    }
+
+    [1 evolucion]
+
+    varArray.forEach(funtion(elemento)){
+
+        metodos declarados de ejecutar
+    }
+        
+    [2 evolucion]
+
+    
+ array.forEach(element => {
+    metodos declarados de ejecutar       
+        });
+
+    -->
+    <script>
+       
+
+       var datos = [ 1,2,3,4,5,6,7,8];
+
+       /*
+       Recordando:
+       la sentencia retun en la finalizacion de la funcion donde especifica un 
+       valor para ser devuelto.
+       Finalidad propia de dicha sentencia no es otra, forzar la salida de manera inmedianta
+       de la funcion en al que se encuetra
+       
+       */
+      /*----------------CONJUNTO DE SINTAXIS------------------- */
+
+      //Recorridos ortodoxos
+      var otraFuncion = function(numero){
+        return numero + 2
+      }
+      console.log(otraFuncion(6));
+
+      //Omitiendo la funcion
+      var otraFuncion = (numero)=>numero+2
+      console.log(otraFuncion(2));
+
+      //Funcionalidad y reutilizacion
+      var a = otraFuncion(5);
+      console.log(a);
+
+      var b = otraFuncion(10)
+      console.log(b);
+
+      // Solo hay un parámetro
+      var nombre='Antonio'
+      var hola = nombre =>(`Hola, me llamo: ${nombre}`);
+      console.log(hola('Juan')); 
+    
+      //Sin parámetros
+     var mostraFecha = ()=> new Date().toLocaleDateString()
+      console.log(mostraFecha());
+
+      //Devolviendo objeto literal
+var usuario = (correo, clave,zapellido)=>({correo:correo,clave:clave,zapellido:zapellido});
+console.log(usuario('andrgogo1012@gmail.com','1012','Cuadrado'))
+    </script>
+</body>
+</html>
