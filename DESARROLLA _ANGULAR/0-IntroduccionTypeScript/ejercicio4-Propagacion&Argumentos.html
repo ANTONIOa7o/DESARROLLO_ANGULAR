@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propagacion y Variables de Argumentos</title>
+</head>
+<body>
+    <!--
+
+        I]Propagacion o spread
+
+        Es una expresion, que ayudar apocopar, alli donde se esperan multiples
+        arguementos, elemento...
+        Sintais:
+        ...varPropagar
+        Ejemplo.
+    -->
+    <script>
+        //1º
+        let sumar = (a,b)=> a+b;
+        var añadir =[4,5];
+        console.log(sumar(...añadir))
+
+        //2º
+        var nombre =new Array('Juan','Pedro','Maite');//objeto
+        document.write(nombre+'<br>')
+        document.write(...nombre+ '<br>');
+
+        var nuevos=['Israel','Rocio',...nombre,'Maria'];//Carga de elementos
+        document.write(nuevos+ '<br>');
+
+        //3º 
+        var mapABC={a:5,b:7,c:8}
+        let mapABCD ={...mapABC,d:4}
+        console.log(mapABCD.a);
+
+
+    /*
+    II] Variables de Argumento (parámetro rest)
+        Definimos argumentos, que estarán indicando al método o funcion
+        concreta donde puede pasar multiples variables.
+
+    */
+
+    function mostrarElementos(...muestra){
+        console.log(muestra);
+        console.log(muestra[0]);
+    }
+    mostrarElementos(2,8,5);
+    mostrarElementos(1);
+
+    function multiplicar(n1,n2,...n3) {
+        let resultado =n1*n2
+        for (let num of n3) {
+            resultado *= num;
+            
+        }
+        return resultado;
+        console.log(resultado);
+    }
+    
+    console.log('multiplicacion' + multiplicar(5,7,1,2));
+    </script>
+</body>
+</html>
