@@ -52,6 +52,7 @@
     mostrarElementos(1);
 
     function multiplicar(n1,n2,...n3) {
+        //Conclusion ...n3 aglutina un conjunto de parametros
         let resultado =n1*n2
         for (let num of n3) {
             resultado *= num;
@@ -60,6 +61,20 @@
         return resultado;
         console.log(resultado);
     }
+/*
+Ejercicio
+Partiendo de la funcion sumar, con un parámetro rest
+ saquemos por consola la suma de cualquier numero
+*/
+function adicion(...numeros) {
+let resultado = 0;
+//Procesando un array
+for (let n of numeros) {
+resultado += n;
+}
+return resultado;
+}
+console.log(`suma: ${adicion(3, 4, 6, 8)}`);
     
     console.log('multiplicacion' + multiplicar(5,7,1,2));
     </script>
