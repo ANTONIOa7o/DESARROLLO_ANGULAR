@@ -1,0 +1,13 @@
+
+
+/*
+ESPECIFICIA EL CONJUNTO DE ESTILOS Y SU PERCEPCION app.component.html
+*/
+.color{
+    color: red;
+    font-weight: bold;
+}
+/*
+Utilizarermos con normalidad cualquier clase dentro del componente
+
+*/
