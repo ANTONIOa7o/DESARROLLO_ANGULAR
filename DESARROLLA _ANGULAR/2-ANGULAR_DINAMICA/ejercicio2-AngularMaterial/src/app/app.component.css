@@ -1,0 +1,48 @@
+.control{
+
+    width: 10%;
+}
+
+button{
+    margin: 8px;
+}
+
+
+/*
+Configuracion de estilo de Angular Material Cards
+- .example-header-image (avatar)
+- .example-card (tarjeta)
+*/
+.tarjeta {
+    max-width: 400px;
+    margin: 0 auto;
+
+  }
+  
+  .avatar { 
+    background-image: url(https://picsum.photos/id/103/2592/1936);
+    background-size: cover;
+  }
+
+  /*
+  Estilo predeterminado por Angular Material (sidenav)
+  */
+  .example-container {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .example-sidenav {
+    padding: 20px;
+  }
+  
+  
