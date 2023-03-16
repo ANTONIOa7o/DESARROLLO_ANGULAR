@@ -1,0 +1,9 @@
+{
+    "app.titulo":"La Internacionalizacion(i18n)",
+    "app.titulo2":"Introduccion a la Internacionalizacion en Angular" ,
+    "app.texto":"Partiendo de un necesidad de globalizar y democratizar la informacion, tanto en su difusion como en amplitud de cuota.Con la intencionalidad principal traducir a los principales idiomas y regionalismo.Ventajas principales como la traduccion simultanea solicitada por el usuario, sin lanecesidad de realizar cambios sustanciales en la web app.",
+    "app.navbar1":"Instalacion",
+    "app.navbar2":"Librerias",
+    "app.navbar3":"Comunicaciones y Rutas",
+    "app.boton":" + Detalles >>"
+}

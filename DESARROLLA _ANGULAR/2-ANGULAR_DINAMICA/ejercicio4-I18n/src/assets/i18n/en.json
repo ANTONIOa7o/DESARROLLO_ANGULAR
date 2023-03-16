@@ -1,0 +1,8 @@
+{
+    "app.titulo":"La Internationlization(i18n)",
+    "app.titulo2":"Introduction to Internationlization in Angular" ,
+    "app.texto":"Starting from a need to globalize and democratize information, both in its dissemination and in the amplitude of the quota. With the main intention of translating into the main languages ​​and regionalism. Main advantages such as the simultaneous translation requested by the user, without the need to make substantial changes on the web app.",
+    "app.navbar2":"Libreries",
+    "app.navbar3":"Comunication y Routes",
+    "app.boton":" + Details >>"
+}
