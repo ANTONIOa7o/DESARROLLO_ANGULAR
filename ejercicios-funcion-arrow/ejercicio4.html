@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calcular(importe, dto=0, iva=21){
+            return (importe - (dto/100 * importe)) * (iva/100 +1);
+        }
+
+        document.write("1000€ con 10% dto y 10% IVA: " + calcular(1000,10,10) + "<br/>");
+        document.write("1000€ sin dto IVA por defecto: " + calcular(1000) + "<br/>");
+        document.write("1000€ con 15% dto: " + calcular(1000,15) + "<br/>");
+        document.write("1000€ sin dto y 4% IVA: " + calcular(1000,0,4) + "<br/>");
+
+    </script>
+</body>
+</html>
