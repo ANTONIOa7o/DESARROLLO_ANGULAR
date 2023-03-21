@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/ejercicio5-seviciorest",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
